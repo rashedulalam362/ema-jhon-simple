@@ -1,0 +1,14 @@
+.shop_conatiner{
+ display: flex;   
+}
+        
+.products_conatiner{
+    width: 70%;
+    margin-right: 20px;
+    margin-left: 5px;
+    border-right: 1px solid lightgray;
+}
+
+.btn{
+ background-color:goldenrod;   
+}
