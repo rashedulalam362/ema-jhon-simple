@@ -6,11 +6,17 @@ import  './Shop.css'
 const Shop = () => {
   
     const data=fakeData.slice(0,10)
+ 
     const [products, setProducts]=useState(data)
     const [cart, setCart]=useState([]);
     const handleAddProduct=(product)=>{
+      console.log('country add', product);
       const newCart=[...cart, product]
       setCart(newCart)
+     const newProduct=[...products, product]
+    
+     setProducts(newProduct)
+
     }
     return (
         <div className="shop_conatiner">
